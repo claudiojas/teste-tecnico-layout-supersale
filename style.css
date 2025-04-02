@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.sale__ad{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    height: 30px;
+    gap: 4px;
+
+    background-color: #005cff;
+    color: #ffff;
+
+    font-family: Nunito Sans;
+    font-weight: 700;
+    font-size: 14px;
+}
+.span__value{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #6220c1;
+    width: 63px;
+    height: 16px;
+}
+.span__ad {
+    font-weight: 400;
+}
