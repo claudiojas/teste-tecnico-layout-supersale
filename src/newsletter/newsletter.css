@@ -1,0 +1,127 @@
+.container__newsletter_primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    padding: 64px 330px 40px 330px;
+}
+.container__newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1260px;
+    min-height: 227px;
+
+    font-family: Nunito Sans;
+}
+.container__infor__newsletter {
+    margin-bottom: 24px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+
+}
+.container__infor__newsletter span {
+    color: #005cff;
+}
+.container__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 176px;
+
+    gap: 24px;
+    padding: 64px 0;
+
+    background-color: #dedede;
+}
+
+.input__name,
+.input__email {
+    width: 280px;
+    height: 48px;
+    padding-left: 24px;
+
+    background-color: #fff; /* Fundo padrão */
+    border: none;
+    border-radius: 8px;
+
+    outline: none; /* Remove a borda azul padrão do navegador */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+/* Quando o input estiver focado */
+.input__name:focus,
+.input__email:focus {
+    border: 1px solid #005cff; /* Altera a cor de fundo */
+}
+
+
+.input__name::placeholder,
+.input__email::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    color: #303030;
+}
+/* Container do checkbox */
+.container___checkbox___newletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Espaço entre o checkbox e o texto */
+}
+
+/* Estiliza o checkbox */
+.input__newsletter__check {
+    width: 16px;
+    height: 16px;
+    
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Quando o checkbox está marcado */
+.input__newsletter__check:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Adiciona um check no meio quando selecionado */
+.input__newsletter__check:checked::before {
+    content: "✔";
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.label__text__newslatter{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 100%;
+
+    color: #656565;
+}
+.button__newsletter{
+    width: 121px;
+    height: 48px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #005cff;
+    color: #ffff;
+
+    cursor: pointer;
+}
