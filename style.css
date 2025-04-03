@@ -6,6 +6,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
 li {
     list-style: none;
     cursor: pointer;

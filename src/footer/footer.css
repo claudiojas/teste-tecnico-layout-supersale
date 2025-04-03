@@ -1,3 +1,101 @@
 .footer__contaiener{
-    background: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    
+}
+.container__div__sections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+
+    gap: 64px;
+    padding: 64px 0;
+
+    background-color: #f5f5f5;
+}
+.heder__section__01{
+    display: flex;
+    gap: 142px;
+}
+.container__logos__01 {
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+}
+.logo__avanti__footer{
+    width: 156px;
+    height: 27px;
+}
+.footer__social__logos{
+    display: flex;
+    gap: 40px;
+}
+.footer__nav {
+    display: flex;
+    gap: 110px;
+}
+.footer__container__nav{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+    gap: 11px;   
+}
+.section__header__icons__payments{
+    display: flex;
+    
+    gap: 34px;
+}
+.foother__ul__nav{
+    display: flex;
+    flex-direction: column;
+
+    gap: 5.5px;
+
+}
+.footer__container__business__partners{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+    padding: 40px 423px;
+}
+.footer__container__business__partners p {
+    width: 1074px;
+    text-align: center;
+}
+.business__partners__icons{
+    display: flex;
+    gap: 48px;
+}
+.partners__division__icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.division01>*:nth-child(1){
+    width: 39px;
+    height: 30px;
+}
+.division01>*:nth-child(2){
+    width: 50px;
+    height: 32px;
+}
+.division02>*:nth-child(1){
+    width: 58px;
+    height: 11px;
+}
+.division02>*:nth-child(2){
+    width: 53px;
+    height: 19px;
 }
