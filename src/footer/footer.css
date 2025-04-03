@@ -101,6 +101,12 @@
 .footer__container__business__partners p {
     width: 1074px;
     text-align: center;
+
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+
+    color:#303030;
 }
 .business__partners__icons{
     display: flex;
