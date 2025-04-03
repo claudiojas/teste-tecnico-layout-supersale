@@ -1,0 +1,129 @@
+.container__card {
+    display: flex;
+    flex-direction: column;
+
+    width: 238px;
+    height: 409px;
+
+    border-radius: 10px;
+    border: 1px solid #dddd;
+
+    padding: 6px 8px 8px 8px;
+    gap: 16px;
+}
+.container__card h3{
+    font-family: Nunito Suns;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+
+    color: #303030;
+}
+.container__imagem__card{
+    position: relative
+    ;
+    width: 22px;
+    height: 222px;
+}
+.container__infor__prices{
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+    
+    width: 100%;
+    height: auto;
+}
+.tag {
+    position: absolute;
+
+    width: auto;
+    height: 23px;
+
+    padding: 1px 6px;
+
+    border: none;
+    border-radius: 4px;
+
+    background-color: #00264e;
+    color: #ffff;
+
+    font-family: Nunito Sans;
+}
+.container__prices{
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    gap: 8px;
+}
+.container__price_products {
+    height: auto;
+}
+.old__price {
+    font-family: Nunito Suns;
+    font-weight: 400;
+    line-height: 100%;
+    text-decoration: line-through;
+    font-size: 12px;
+
+    color: #303030;
+}
+/* .new__price{
+    font-family: Nunito Suns;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+
+    color: #0000;
+} */
+.tagOff{
+    width: auto;
+    height: auto;
+
+    border: none;
+    border-radius: 4px;
+
+    padding: 4px 8px;
+
+    background-color: #5EC0BE;
+    color: #ffff;
+
+    font-family: Nunito Sans;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.price__variente{
+    display: flex;
+    gap: 2px;
+
+    font-family: Nunito Sans;
+    font-size: 12px;
+    line-height: 100%;
+
+    color: #303030;
+}
+
+.price__variente p:nth-child(1){
+    font-weight: 400;
+}
+.price__variente p:nth-child(2){
+    font-weight: 700;
+}
+.button__card{
+    width: 222px;
+    height: 40px;
+
+    padding: 10px 24px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #005cff;
+    color: #ffff;
+
+    font-family: Nunito Suns;
+    font-weight: 700;
+    line-height: 20px;
+}
