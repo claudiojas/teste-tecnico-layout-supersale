@@ -8,12 +8,20 @@ function loadComponents() {
         .catch(error => console.error('Erro ao carregar o header:', error));
 
     // Carregando o componente de newsletter
+    fetch('src/herocontact/herocontact.html') 
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('hero-contact').innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar o herocontact:', error));
+
+    // Carregando o componente de newsletter
     fetch('src/newsletter/newsletter.html') 
         .then(response => response.text())
         .then(data => {
             document.getElementById('newsletter-container').innerHTML = data;
         })
-        .catch(error => console.error('Erro ao carregar o header:', error));
+        .catch(error => console.error('Erro ao carregar o newsletter:', error));
 
     // Carregando o componete de Footer
     fetch('src/footer/footer.html')
