@@ -17,7 +17,15 @@ function loadComponents() {
       .then(data => {
           document.getElementById('featured-product').innerHTML = data;
       })
-      .catch(error => console.error('Erro ao carregar o header:', error));
+      .catch(error => console.error('Erro ao carregar o produto em destaque 1:', error));
+
+    // Carregando o componente de bunner central da página
+    fetch('src/heroBunnerCenter/heroBunnerCenter.html') 
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('hero-bunner-center').innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar o bunner central:', error));
 
     // Carregando o componente de produto em destaque 2
     fetch('src/featuredProduct/featuredProduct.html') 
@@ -25,7 +33,7 @@ function loadComponents() {
         .then(data => {
             document.getElementById('featured-product-2').innerHTML = data;
         })
-        .catch(error => console.error('Erro ao carregar o header:', error));
+        .catch(error => console.error('Erro ao carregar o produto em destaque 2:', error));
 
     // Carregando o componente de Hero Contact
     fetch('src/herocontact/herocontact.html') 
