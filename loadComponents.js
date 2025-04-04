@@ -11,6 +11,22 @@ function loadComponents() {
         })
         .catch(error => console.error('Erro ao carregar o header:', error));
 
+    // Carregando o componente de produto em destaque 1
+    fetch('src/featuredProduct/featuredProduct.html') 
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('featured-product').innerHTML = data;
+      })
+      .catch(error => console.error('Erro ao carregar o header:', error));
+
+    // Carregando o componente de produto em destaque 2
+    fetch('src/featuredProduct/featuredProduct.html') 
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('featured-product-2').innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar o header:', error));
+
     // Carregando o componente de Hero Contact
     fetch('src/herocontact/herocontact.html') 
         .then(response => response.text())
