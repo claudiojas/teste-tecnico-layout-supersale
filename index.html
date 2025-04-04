@@ -17,7 +17,21 @@
         Ganhe <span class="span__value">R&dollar;10,00</span>de desconto no seu primeiro pedido. Utilize o cupom <span class="span__ad">DESCONTO10</span>
     </section>
     <!--carrega o componente de header -->
-    <div id="header-container"></div> 
+    <div id="header-container"></div>
+
+
+    <!--carrega o componente dos cards-->
+    <div class="container__cards">
+        <div class="sub__container__cards">
+            <div class="container__infor__cards">
+                <p>Lançamentos</p>
+                <p>ver mais</p>
+            </div>
+            <div id="cards-components-init"></div>
+            <img src="src/assets/icons/arrow-left.svg" alt="seta para esquerda" class="arrow-left-init">
+            <img src="src/assets/icons/arrow-rigth.svg" alt="seta para direita" class="arrow-rigth-init">
+        </div>
+    </div>
 
     <main>
         <h2>Produtos em Oferta</h2>
@@ -25,7 +39,18 @@
     </main>
 
     <!--carrega o componente dos cards-->
-    <div id="cards-container"></div>
+    <div class="container__cards">
+        <div class="sub__container__cards">
+            <div class="container__infor__cards">
+                <p>Lançamentos</p>
+                <p>ver mais</p>
+            </div>
+            <div id="cards-components"></div>
+            <img src="src/assets/icons/arrow-left.svg" alt="seta para esquerda" class="arrow-left">
+            <img src="src/assets/icons/arrow-rigth.svg" alt="seta para direita" class="arrow-rigth">
+        </div>
+    </div>
+       
 
     <!--carrega o componente de newsletter-->
     <div id="hero-contact"></div>
@@ -34,8 +59,8 @@
     <div id="newsletter-container"></div>
 
      <!--carrega o componente de footer -->
-    <div id="footer-container"></div>
+    <div id="footer-container"></div>  
 
-    <script src="./loadComponents.js"></script>
+    <script type="module" src="./loadComponents.js"></script>
 </body>
 </html>

@@ -15,6 +15,10 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
 }
+
+main {
+    background-color: #6220c1;
+}
 li {
     list-style: none;
     cursor: pointer;
@@ -47,4 +51,93 @@ li {
 }
 .span__ad {
     font-weight: 400;
+}
+.container__cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    width: 100%;    
+    padding: 0 315px;
+
+    margin: 96px 0;
+}
+.sub__container__cards{
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+
+    width: 1288px;
+    height: auto;
+
+    gap: 19px;
+}
+.arrow-left,
+.arrow-rigth,
+.arrow-left-init,
+.arrow-rigth-init {
+    position: absolute;
+
+    width: 30px;
+    height: 30px;
+
+    top: 235px;
+
+    cursor: pointer;
+}
+
+.arrow-left,
+.arrow-left-init{
+    left: -15px;
+}
+.arrow-rigth,
+.arrow-rigth-init {
+    right: -18px;
+}
+.container__infor__cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 0 16px;
+
+    font-family: Nunito Suns;
+    
+    color: #000;
+}
+.container__infor__cards p:nth-child(1){
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 700;
+}
+.container__infor__cards p:nth-child(2){
+    font-size: 14px;
+    line-height: 20px;
+
+    cursor: pointer;
+
+}
+
+#cards-components,
+#cards-components-init {
+    display: flex;
+
+    overflow-x: auto;
+    scroll-behavior: smooth; 
+    
+    width: 100%;
+    height: auto;
+
+    gap: 17px;
+
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE e Edge */
+}
+
+/* Chrome, Safari e Opera */
+#cards-components::-webkit-scrollbar {
+    display: none;
 }
