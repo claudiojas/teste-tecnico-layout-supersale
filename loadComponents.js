@@ -1,6 +1,7 @@
-import setupCarousel from "./setupCarousel.js";
 import loadInitialCards from "./loadInitialCard.js"
 import loadCards from "./loadCards.js"
+import setupCategoryMenuHover from "./setupCategoryMenuToggle.js";
+
 
 function loadComponents() {
     // Carregando o componente de Header
@@ -8,6 +9,7 @@ function loadComponents() {
         .then(response => response.text())
         .then(data => {
             document.getElementById('header-container').innerHTML = data;
+            setupCategoryMenuHover();   
         })
         .catch(error => console.error('Erro ao carregar o header:', error));
 
