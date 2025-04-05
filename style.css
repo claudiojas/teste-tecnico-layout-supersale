@@ -57,6 +57,11 @@ li {
 .span__ad {
     font-weight: 400;
 }
+.bunner__header__imagem {
+    position: relative;
+
+    z-index: -1;
+}
 .container__cards{
     display: flex;
     flex-direction: column;

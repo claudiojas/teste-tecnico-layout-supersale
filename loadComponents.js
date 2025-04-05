@@ -1,6 +1,7 @@
 import loadInitialCards from "./loadInitialCard.js"
 import loadCards from "./loadCards.js"
 import setupCategoryMenuHover from "./setupCategoryMenuToggle.js";
+import listDepartamentMenuHover from "./listDepartamentMenuHover.js"
 
 
 function loadComponents() {
@@ -9,7 +10,8 @@ function loadComponents() {
         .then(response => response.text())
         .then(data => {
             document.getElementById('header-container').innerHTML = data;
-            setupCategoryMenuHover();   
+            setupCategoryMenuHover();
+            listDepartamentMenuHover();
         })
         .catch(error => console.error('Erro ao carregar o header:', error));
 
