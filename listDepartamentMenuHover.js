@@ -1,3 +1,5 @@
+import closeMenuDepartament from "./closeMenuDepartament.js";
+
 export default function listDepartamentMenuHover() {
   const listItems = document.querySelectorAll(".list__nav__submenu li");
   const menu = document.querySelector(".section__navbar__menu");
@@ -19,7 +21,7 @@ export default function listDepartamentMenuHover() {
 
   touggleMenuDepartament.addEventListener("mouseleave", () => {
     isMouseInsideMenu = false;
-    touggleMenuDepartament.innerHTML = '';
+    closeMenuDepartament();
   });
 
   listItems.forEach((item) => {
@@ -41,7 +43,7 @@ export default function listDepartamentMenuHover() {
       // Delay para permitir transição para o menu
       setTimeout(() => {
         if (!isMouseInsideMenu && hoveredItem === item) {
-          touggleMenuDepartament.innerHTML = '';
+          closeMenuDepartament();
         }
       }, 100);
     });

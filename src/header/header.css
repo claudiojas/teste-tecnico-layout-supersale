@@ -226,5 +226,7 @@
 .touggle_relative_menu_departament {
     position: absolute;
     z-index: 1000;
+
+    width: 1261px;
 }
 

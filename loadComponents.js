@@ -2,6 +2,7 @@ import loadInitialCards from "./loadInitialCard.js"
 import loadCards from "./loadCards.js"
 import setupCategoryMenuHover from "./setupCategoryMenuToggle.js";
 import listDepartamentMenuHover from "./listDepartamentMenuHover.js"
+import openAllItensNavMenu from "./openAllItensNavMenu.js"
 
 
 function loadComponents() {
@@ -12,6 +13,7 @@ function loadComponents() {
             document.getElementById('header-container').innerHTML = data;
             setupCategoryMenuHover();
             listDepartamentMenuHover();
+            openAllItensNavMenu();
         })
         .catch(error => console.error('Erro ao carregar o header:', error));
 
