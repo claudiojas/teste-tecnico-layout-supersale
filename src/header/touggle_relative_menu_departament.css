@@ -1,7 +1,7 @@
 .section__submenu__select {
     position: absolute;
-    top: 15.48%;
-    right: 16.5%;
+    top: 40px;
+    right: 20px;
 
     display: flex;
     justify-content: space-between;

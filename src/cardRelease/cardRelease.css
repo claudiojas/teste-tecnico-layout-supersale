@@ -1,6 +1,7 @@
 .container__card {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     max-width: 238px;
     height: 409px;

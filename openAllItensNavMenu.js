@@ -2,7 +2,7 @@ import closeMenuDepartament from "./closeMenuDepartament.js";
 import closeMenuAllCategorie from "./closeMenuAllCategorie.js"
 
 export default function openAllItensNavMenu () {
-    const btnCell = document.querySelector(".btn__cell");
+    const btnAllMenu = document.querySelectorAll(".btn__all__products__menu");
     let touggleMenuDepartament = document.getElementById('touggle_relative_menu_departament');
 
     if (!touggleMenuDepartament) {
@@ -11,21 +11,23 @@ export default function openAllItensNavMenu () {
       menu.appendChild(touggleMenuDepartament);
     }
 
-    btnCell.addEventListener("mouseenter", () => {
-
-        if(touggleMenuDepartament.innerHTML === '') {
-            closeMenuAllCategorie();
-            fetch('src/header/touggle_relative_menu_departament.html')
-            .then(response => response.text())
-            .then(data => {
-                touggleMenuDepartament.innerHTML = data;
+    btnAllMenu.forEach((item) => {
+        item.addEventListener("click", () => {
     
-                const containerMenuDepartament = document.getElementById("container__menu__departament");
-                containerMenuDepartament.style.width = "100%"
-            });
-        } else {
-            closeMenuDepartament();
-        }
-
-    });
+            if(touggleMenuDepartament.innerHTML === '') {
+                closeMenuAllCategorie();
+                fetch('src/header/touggle_relative_menu_departament.html')
+                .then(response => response.text())
+                .then(data => {
+                    touggleMenuDepartament.innerHTML = data;
+        
+                    const containerMenuDepartament = document.getElementById("container__menu__departament");
+                    containerMenuDepartament.style.width = "100%"
+                });
+            } else {
+                closeMenuDepartament();
+            }
+    
+        });
+    })
 }
