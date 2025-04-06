@@ -1,5 +1,5 @@
-import closeMenuDepartament from "./closeMenuDepartament.js";
-import closeMenuAllCategorie from "./closeMenuAllCategorie.js"
+import hydratingSubmenu from "./hydratingSubmenu.js";
+import closeMenuAllCategorie from "./closeMenuAllCategorie.js";
 
 export default function openAllItensNavMenu () {
     const btnAllMenu = document.querySelectorAll(".btn__all__products__menu");
@@ -13,21 +13,23 @@ export default function openAllItensNavMenu () {
 
     btnAllMenu.forEach((item) => {
         item.addEventListener("click", () => {
-    
+            const categoriaInicial = item.getAttribute("data-categoria");
+
             if(touggleMenuDepartament.innerHTML === '') {
                 closeMenuAllCategorie();
                 fetch('src/header/touggle_relative_menu_departament.html')
                 .then(response => response.text())
                 .then(data => {
                     touggleMenuDepartament.innerHTML = data;
-        
+
                     const containerMenuDepartament = document.getElementById("container__menu__departament");
-                    containerMenuDepartament.style.width = "100%"
+                    containerMenuDepartament.style.width = "100%";
+
+                    hydratingSubmenu(categoriaInicial); 
                 });
             } else {
                 closeMenuDepartament();
             }
-    
         });
-    })
+    });
 }

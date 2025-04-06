@@ -23,22 +23,39 @@
 
     <section class="section__nav">
         <nav>
-            <ul class="list__nav">
-                <li class="categorie__item ">
+            <ul id="all__categories" class="list__nav">
+                <li  class="categorie__item ">
                     <button class="span__header btn__toggle__menu">
                         <!-- <span class="icon"></span> -->
                         <p class="icon__menu">&#8801;</p>  
                         <p>Todas as Categorias</p>
                     </button>
                 </li>
-                <li><button class="btn__all__products__menu">Celulares</button></li>
-                <li><button class="btn__all__products__menu">Eletrodomésticos</button></li>
-                <li><button class="btn__all__products__menu">Informática</button></li>
-                <li><button class="btn__all__products__menu">Áudio e vídeo</button></li>
-                <li><button class="btn__all__products__menu">Móveis</button></li>
-                <li><button class="btn__all__products__menu">Mercado</button></li>
-                <li><button class="btn__all__products__menu">Oferta do dia</button></li>
-                <li><button class="btn__all__products__menu">Nossas lojas</button></li>
+                <li id="cell">
+                    <button class="btn__all__products__menu" data-categoria="cell">Celulares</button>
+                  </li>
+                  <li id="eletro">
+                    <button class="btn__all__products__menu" data-categoria="eletro">Eletrodomésticos</button>
+                  </li>
+                  <li id="infor">
+                    <button class="btn__all__products__menu" data-categoria="infor">Informática</button>
+                  </li>
+                  <li id="audio/video">
+                    <button class="btn__all__products__menu" data-categoria="audio/video">Áudio e vídeo</button>
+                  </li>
+                  <li id="furniture">
+                    <button class="btn__all__products__menu" data-categoria="furniture">Móveis</button>
+                  </li>
+                  <li id="supermarket">
+                    <button class="btn__all__products__menu" data-categoria="supermarket">Super mercado</button>
+                  </li>
+                  <li id="promo_code">
+                    <button class="btn__all__products__menu" data-categoria="promo_code">Oferta do dia</button>
+                  </li>
+                  <li id="our_stores!">
+                    <button class="btn__all__products__menu" data-categoria="our_stores!">Nossas lojas</button>
+                  </li>
+                  
             </ul>
         </nav>
 

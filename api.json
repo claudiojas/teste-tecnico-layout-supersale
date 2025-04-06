@@ -1,0 +1,162 @@
+{
+  "cell": [
+    {
+      "title": "Smartphones",
+      "items": [
+        "iPhone 14", "iPhone 13", "Galaxy S23", "Galaxy A54", "Xiaomi 13", "Xiaomi Redmi Note 12", "Motorola Edge", "Motorola G82", "Realme 11 Pro", "Asus ROG Phone 7"
+      ]
+    },
+    {
+      "title": "Acessórios",
+      "items": [
+        "Capinhas", "Películas", "Carregadores", "Power Bank", "Suportes de celular", "Cabos USB-C", "Cartões de memória", "Adaptadores", "Carregador veicular"
+      ]
+    },
+    {
+      "title": "Outros",
+      "items": [
+        "Smartwatch", "Fones Bluetooth", "Relógios inteligentes infantis", "Anéis inteligentes", "Canetas Stylus", "Celulares básicos"
+      ]
+    }
+  ],
+  "eletro": [
+    {
+      "title": "Cozinha",
+      "items": [
+        "Geladeira", "Fogão", "Microondas", "Cooktop", "Forno elétrico", "Fritadeira sem óleo", "Liquidificador", "Multiprocessador", "Sanduicheira", "Batedeira"
+      ]
+    },
+    {
+      "title": "Lavanderia",
+      "items": [
+        "Máquina de Lavar", "Secadora", "Tanquinho", "Ferro de passar", "Varal elétrico", "Cesto de roupas", "Tábua de passar"
+      ]
+    },
+    {
+      "title": "Outros",
+      "items": [
+        "Aspirador de pó", "Purificador de ar", "Climatizador", "Umidificador", "Aquecedor elétrico", "Exaustor de cozinha"
+      ]
+    }
+  ],
+  "infor": [
+    {
+      "title": "Computadores",
+      "items": [
+        "Notebook", "Notebook Gamer", "PC Gamer", "All-in-One", "Macbook", "Mini PC", "Chromebook", "Desktop Corporativo"
+      ]
+    },
+    {
+      "title": "Periféricos",
+      "items": [
+        "Mouse", "Teclado", "Webcam", "Headset", "Mousepad", "Leitor de cartão", "Pen Tablet", "Controle USB", "Volante Gamer"
+      ]
+    },
+    {
+      "title": "Acessórios",
+      "items": [
+        "Mochilas", "Suportes", "Cabos HDMI", "Cabos de energia", "Organizadores de fio", "Coolers", "Adaptadores", "Bases refrigeradas"
+      ]
+    }
+  ],
+  "audio/video": [
+    {
+      "title": "TVs",
+      "items": [
+        "Samsung 50\"", "LG 4K", "Philips Ambilight", "TCL 55\"", "Sony Bravia", "Smart TV 32\"", "QLED 65\"", "OLED 75\"", "TV Box"
+      ]
+    },
+    {
+      "title": "Som",
+      "items": [
+        "Caixa Bluetooth", "Soundbar", "Home Theater", "Micro System", "Mini System", "Caixas Acústicas", "Caixa de som portátil", "Auto falantes", "Gravador de voz"
+      ]
+    },
+    {
+      "title": "Outros",
+      "items": [
+        "Projetor", "Fone de ouvido", "Amplificador", "DVD Player", "Antena digital", "Receptor", "Controle remoto universal"
+      ]
+    }
+  ],
+  "furniture": [
+    {
+      "title": "Sala",
+      "items": [
+        "Sofá", "Estante", "Rack", "Poltrona", "Mesa de centro", "Painel para TV", "Aparador", "Mesinha lateral"
+      ]
+    },
+    {
+      "title": "Quarto",
+      "items": [
+        "Cama", "Guarda-roupa", "Criado-mudo", "Penteadeira", "Colchão", "Cômoda", "Roupeiro", "Sapateira"
+      ]
+    },
+    {
+      "title": "Escritório",
+      "items": [
+        "Mesa", "Cadeira", "Prateleira", "Gaveteiro", "Armário de arquivos", "Mesa gamer", "Estante de livros"
+      ]
+    }
+  ],
+  "supermarket": [
+    {
+      "title": "Alimentos",
+      "items": [
+        "Arroz", "Feijão", "Macarrão", "Açúcar", "Farinha", "Óleo", "Café", "Sal", "Molho de tomate", "Biscoitos", "Pães", "Carnes", "Frango", "Peixe", "Linguiça", "Leite", "Iogurte", "Queijo", "Manteiga"
+      ]
+    },
+    {
+      "title": "Bebidas",
+      "items": [
+        "Refrigerante", "Suco", "Água", "Energético", "Cerveja", "Vinho", "Destilados", "Água com gás", "Chá gelado", "Isotônicos"
+      ]
+    },
+    {
+      "title": "Limpeza",
+      "items": [
+        "Detergente", "Desinfetante", "Esponja", "Sabão em pó", "Amaciante", "Água sanitária", "Multiuso", "Pano de chão", "Vassoura", "Rodo", "Balde", "Lustra móveis"
+      ]
+    }
+  ],
+  "promo_code": [
+    {
+      "title": "Ofertas Relâmpago",
+      "items": [
+        "Produto 1", "Produto 2", "Produto 3", "TV Samsung 4K", "Celular Motorola G23", "Notebook Dell i5", "Fritadeira sem óleo", "Soundbar JBL"
+      ]
+    },
+    {
+      "title": "Descontos Exclusivos",
+      "items": [
+        "Cupom 10%", "Frete grátis", "Leve 3 pague 2", "R$50 off acima de R$500", "10% extra no Pix", "Desconto estudante"
+      ]
+    },
+    {
+      "title": "Saldão",
+      "items": [
+        "Liquidificador", "Celular antigo", "TV 32\"", "Fogão usado", "Roteador", "Fone de ouvido", "Notebook reembalado"
+      ]
+    }
+  ],
+  "our_stores!": [
+    {
+      "title": "Lojas Físicas",
+      "items": [
+        "São Paulo", "Rio de Janeiro", "Belo Horizonte", "Salvador", "Curitiba", "Porto Alegre", "Recife", "Brasília", "Manaus", "Fortaleza"
+      ]
+    },
+    {
+      "title": "Atendimento",
+      "items": [
+        "Chat Online", "WhatsApp", "Telefone", "E-mail", "Central de Ajuda", "Autoatendimento", "Redes Sociais"
+      ]
+    },
+    {
+      "title": "Serviços",
+      "items": [
+        "Troca e Devolução", "Garantia Estendida", "Instalação", "Retirada na loja", "Entrega agendada", "Montagem de móveis", "Lista de presentes"
+      ]
+    }
+  ]
+}

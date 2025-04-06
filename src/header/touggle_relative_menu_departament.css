@@ -17,6 +17,10 @@
 
     z-index: 1500;
 }
+.div__categorie__submenu ul li:hover {
+    color: #005cff;
+    text-decoration: underline;
+}
 
 .section__submenu__select ul {
     display: flex;
