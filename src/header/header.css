@@ -8,6 +8,8 @@
     height: 118px;
     width: 100%;
 
+    gap: 22px;
+
 }
 .section__seach {
     display: flex;
@@ -93,7 +95,10 @@
     position: relative;
 }
 .list__nav {
+    position: relative;
+
     display: flex;
+    align-items: center;
 
     gap: 45px;
 
@@ -106,30 +111,17 @@
 }
 .list__nav button {
     all: unset;
-}
-.categorie__item .icon {
-    display: inline-block;
-    width: 14px;
-    height: 10px;
-    background-image: url('/src/assets/icons/categorie__icon.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.categorie__item:hover .icon {
-    background-image: url('/src/assets/icons/categorie__icon__blue.svg');
-}
-.span__header{
+
     display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+.icon__menu {
+   font-size: 25px;
 }
 .categorie__nav{
     font-weight: 700;
-}
-.span__header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 8px;
 }
 
 /* css da navbar do menu */
@@ -141,7 +133,7 @@
 
     position: absolute;
     display: none;
-    top: 170%;
+    top: 38px;
 
     width: 234px;
     height: 329px;
