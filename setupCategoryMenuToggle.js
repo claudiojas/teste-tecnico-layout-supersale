@@ -2,6 +2,7 @@ export default function setupCategoryMenuHover() {
   const toggleBtn = document.querySelector(".btn__toggle__menu");
   const menu = document.querySelector(".section__navbar__menu");
 
+
   if (!toggleBtn || !menu) return;
 
   // Ativa o menu ao clicar no botão
@@ -18,13 +19,13 @@ export default function setupCategoryMenuHover() {
   });
 
   // Fecha o menu quando o mouse sai do botão e do menu
-  toggleBtn.addEventListener("mouseleave", () => {
-    setTimeout(() => {
-      !menu.matches(':hover') &&  menu.classList.remove("active");
-    }, 200);
-  });
+  // toggleBtn.addEventListener("mouseleave", () => {
+  //   setTimeout(() => {
+  //     !menu.matches(':hover') &&  menu.classList.remove("active");
+  //   }, 200);
+  // });
 
-  menu.addEventListener("mouseleave", () => {
-    menu.classList.remove("active");
-  });
+  // menu.addEventListener("mouseleave", () => {
+  //   menu.classList.remove("active");
+  // });
 }
