@@ -24,4 +24,9 @@ export default function setupCategoryMenuHover() {
   menu.addEventListener("mouseenter", () => {
     menu.classList.add("active");
   });
+
+
+  // menu.addEventListener("mouseleave", () => {
+  //   closeMenuAllCategorie();
+  // })
 }

@@ -119,23 +119,17 @@
       ]
     }
   ],
-  "promo_code": [
+  "deal_of_the_day": [
     {
-      "title": "Ofertas Relâmpago",
+      "title": "Ofertas Especiais",
       "items": [
-        "Produto 1", "Produto 2", "Produto 3", "TV Samsung 4K", "Celular Motorola G23", "Notebook Dell i5", "Fritadeira sem óleo", "Soundbar JBL"
+        "Celular com 30% OFF", "TV 4K com desconto", "Notebook com frete grátis", "Geladeira com cashback", "Fritadeira em promoção"
       ]
     },
     {
-      "title": "Descontos Exclusivos",
+      "title": "Tempo Limitado",
       "items": [
-        "Cupom 10%", "Frete grátis", "Leve 3 pague 2", "R$50 off acima de R$500", "10% extra no Pix", "Desconto estudante"
-      ]
-    },
-    {
-      "title": "Saldão",
-      "items": [
-        "Liquidificador", "Celular antigo", "TV 32\"", "Fogão usado", "Roteador", "Fone de ouvido", "Notebook reembalado"
+        "Desconto por 24h", "Ofertas até meia-noite", "Preços exclusivos no app", "Promoção relâmpago"
       ]
     }
   ],
@@ -156,6 +150,84 @@
       "title": "Serviços",
       "items": [
         "Troca e Devolução", "Garantia Estendida", "Instalação", "Retirada na loja", "Entrega agendada", "Montagem de móveis", "Lista de presentes"
+      ]
+    }
+  ],
+  "promo_code": [
+    {
+      "title": "Ofertas Relâmpago",
+      "items": [
+        "Produto 1", "Produto 2", "Produto 3", "TV Samsung 4K", "Celular Motorola G23", "Notebook Dell i5", "Fritadeira sem óleo", "Soundbar JBL"
+      ]
+    },
+    {
+      "title": "Descontos Exclusivos",
+      "items": [
+        "Cupom 10%", "Frete grátis", "Leve 3 pague 2", "R$50 off acima de R$500", "10% extra no Pix", "Desconto estudante"
+      ]
+    },
+    {
+      "title": "Saldão",
+      "items": [
+        "Liquidificador", "Celular antigo", "TV 32\"", "Fogão usado", "Roteador", "Fone de ouvido", "Notebook reembalado"
+      ]
+    }
+  ],
+  "premium_products": [
+    {
+      "title": "Exclusivos",
+      "items": [
+        "iPhone 15 Pro Max", "Galaxy Z Fold 5", "TV OLED 8K", "MacBook Pro M3", "Notebook Gamer RTX 4090", "Caixa de som JBL Partybox", "Drone DJI Pro", "Fone Sony WH-1000XM5"
+      ]
+    }
+  ],
+  "best_sellers": [
+    {
+      "title": "Mais Vendidos",
+      "items": [
+        "Celular Galaxy A54", "Smart TV Samsung 50\"", "Notebook Lenovo", "Fone Bluetooth", "Fritadeira sem óleo", "Mouse Gamer", "Air Fryer", "Caixa JBL", "Fogão 4 bocas"
+      ]
+    }
+  ],
+  "app_download": [
+    {
+      "title": "Vantagens do App",
+      "items": [
+        "Compre com 10% OFF", "Notificações de ofertas", "Rastreamento fácil", "Lista de desejos", "Acesso antecipado às promoções", "Experiência otimizada"
+      ]
+    },
+    {
+      "title": "Disponível para",
+      "items": [
+        "Android", "iOS", "Tablet", "Versão Lite"
+      ]
+    }
+  ],
+  "aboutme": [
+    {
+      "title": "Quem Somos",
+      "items": [
+        "História da empresa", "Missão e valores", "Equipe", "Impacto social", "Sustentabilidade"
+      ]
+    },
+    {
+      "title": "Carreiras",
+      "items": [
+        "Trabalhe conosco", "Vagas abertas", "Estágio e jovem aprendiz", "Benefícios"
+      ]
+    }
+  ],
+  "support": [
+    {
+      "title": "Ajuda",
+      "items": [
+        "FAQ", "Política de Troca", "Prazo de Entrega", "Garantia", "Formas de Pagamento", "Segurança da Informação"
+      ]
+    },
+    {
+      "title": "Fale Conosco",
+      "items": [
+        "Chat", "WhatsApp", "E-mail", "Telefone", "Ouvidoria"
       ]
     }
   ]

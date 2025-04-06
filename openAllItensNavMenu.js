@@ -1,5 +1,6 @@
 import hydratingSubmenu from "./hydratingSubmenu.js";
 import closeMenuAllCategorie from "./closeMenuAllCategorie.js";
+import closeMenuDepartament from "./closeMenuDepartament.js";
 
 export default function openAllItensNavMenu () {
     const btnAllMenu = document.querySelectorAll(".btn__all__products__menu");

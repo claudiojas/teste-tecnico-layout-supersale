@@ -1,4 +1,5 @@
 import closeMenuDepartament from "./closeMenuDepartament.js";
+import hydratingSubmenu from "./hydratingSubmenu.js"; // ⬅️ import necessário
 
 export default function listDepartamentMenuHover() {
   const listItems = document.querySelectorAll(".list__nav__submenu li");
@@ -14,7 +15,6 @@ export default function listDepartamentMenuHover() {
   let isMouseInsideMenu = false;
   let hoveredItem = null;
 
-  // Detecta se o mouse está dentro do menu
   touggleMenuDepartament.addEventListener("mouseenter", () => {
     isMouseInsideMenu = true;
   });
@@ -26,21 +26,25 @@ export default function listDepartamentMenuHover() {
 
   listItems.forEach((item) => {
     item.addEventListener("mouseenter", () => {
-      hoveredItem = item; // Atualiza o item atualmente em foco
+      hoveredItem = item;
+      const categoria = item.getAttribute("data-categoria");
 
       fetch('src/header/touggle_relative_menu_departament.html')
         .then(response => response.text())
         .then(data => {
-          // Só insere o conteúdo se o item ainda for o que está sendo focado
           if (hoveredItem === item) {
             touggleMenuDepartament.innerHTML = data;
+
+            // Reaplica o submenu com base na categoria
+            if (categoria) {
+              hydratingSubmenu(categoria);
+            }
           }
         })
         .catch(error => console.error('Erro ao carregar o menu:', error));
     });
 
     item.addEventListener("mouseleave", () => {
-      // Delay para permitir transição para o menu
       setTimeout(() => {
         if (!isMouseInsideMenu && hoveredItem === item) {
           closeMenuDepartament();
