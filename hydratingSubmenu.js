@@ -1,16 +1,12 @@
-let dadosCategorias = null;
+let loadDataCategories = null;
 
-function renderSubmenu(categoria) {
-  const dadosCategoria = dadosCategorias[categoria];
-  if (!dadosCategoria) {
-    console.warn(`Categoria "${categoria}" não encontrada no JSON`);
-    return;
-  }
+function renderSubmenu(category) {
+  const dataCategory = loadDataCategories[category];
 
-  const submenuCols = document.querySelectorAll(".submenu__col");
+  const titleCols = document.querySelectorAll(".title__col");
 
-  dadosCategoria.forEach((coluna, index) => {
-    const col = submenuCols[index];
+  dataCategory?.forEach((coluna, index) => {
+    const col = titleCols[index];
     if (!col) return;
 
     const h1 = col.querySelector("h1");
@@ -35,7 +31,7 @@ export default function hydratingSubmenu(categoriaInicial = null) {
   fetch('api.json')
     .then(response => response.json())
     .then(data => {
-      dadosCategorias = data;
+      loadDataCategories = data;
 
       const listMenu = document.querySelectorAll(".list__nav li");
 
