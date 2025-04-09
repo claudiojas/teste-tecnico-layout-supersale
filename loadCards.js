@@ -37,7 +37,7 @@ export default function loadCards() {
             });
 
             // Chama a função do slider
-            setupCarousel();
+            setupCarousel('cards-components', 'arrow-left', 'arrow-rigth');
         })
         .catch(error => console.error('Erro ao carregar os cards:', error));
 }

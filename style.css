@@ -9,7 +9,6 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
     width: 100vw;
     min-height: 100vh;
@@ -24,13 +23,13 @@ main {
     width: 100%;
     height: auto;
 }
-li {
+li {    width: 358px;
+
     list-style: none;
     cursor: pointer;
 }
-
 .sale__ad{
-    display: flex;
+    display: none;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -60,6 +59,16 @@ li {
 .bunner__header__imagem {
     position: relative;
 
+    width: 100%;
+    /* height: 510px; */
+    height: 390px;
+
+    background-image: url("/src/assets/bunner__header.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-size: cover;
+
     z-index: -1;
 }
 .container__cards{
@@ -68,10 +77,12 @@ li {
     justify-content: center;
     align-content: center;
 
-    width: 100%;    
-    padding: 0 315px;
+    width: 358px;
+    /* width: 100%; */
+    /* padding: 0 315px; */
+    padding: 56px 16px;
 
-    margin: 96px 0;
+    /* margin: 96px 0; */
 }
 .sub__container__cards{
     position: relative;
@@ -150,4 +161,30 @@ li {
 /* Chrome, Safari e Opera */
 #cards-components::-webkit-scrollbar {
     display: none;
+}
+
+
+
+/* estilo mobile */
+
+.sale__ad__mobile{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    height: 52px;
+
+    align-items: center;
+
+    background-color: #005cff;
+    color: #ffff;
+
+    font-family: Nunito Sans;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+}
+.sale__ad__mobile p {
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }

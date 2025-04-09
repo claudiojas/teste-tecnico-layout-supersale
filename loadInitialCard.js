@@ -6,7 +6,6 @@ export default function loadInitialCards() {
     .then((response) => response.text())
     .then((template) => {
       const cardContainer = document.getElementById("cards-components-init");
-      cardContainer.scrollLeft = 0;
 
       const cardsData = [
         { title: "Lorem ipsum dolor sit amet consectetuer adipiscing elit", imageUrl: "/src/assets/model__card.svg", oldPrice: "100,00", newPrice: "79,90", discount: 10, installment: "7,90" },
@@ -38,7 +37,7 @@ export default function loadInitialCards() {
         cardContainer.appendChild(card);
       });
 
-      setupCarousel();
+      setupCarousel('cards-components-init', 'arrow-left-init', 'arrow-rigth-init');
     })
     .catch((error) => console.error("Erro ao carregar os cards:", error));
 }
