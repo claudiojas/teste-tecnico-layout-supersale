@@ -14,7 +14,7 @@
 }
 .container__infor__product__hero__bunner{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
 
