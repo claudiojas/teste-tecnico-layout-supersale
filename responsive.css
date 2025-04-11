@@ -1,63 +1,43 @@
-/* Notebook (769px até 1280px) */
-@media (min-width: 1024px) and (max-width: 1399px) {
-    .header__contaiener__mobile {
-        display: none;
-    }
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    
-        width: 100vw;
-        min-height: 100vh;
-        overflow-x: hidden;
-    }
-    .header__contaiener{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    
-        padding: 17px 325px 18px 330px;
-        
-        height: 118px;
-        width: 100%;
-    
-        gap: 22px;
-    
-    }
-}
-
-
-/* Desktop grande (acima de 1280px) */
-@media (min-width: 1281px) {
-    .header__contaiener__mobile {
-        display: none;
-    }
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    
-        width: 100vw;
-        min-height: 100vh;
-        overflow-x: hidden;
-    }
-    .header__contaiener{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    
-        padding: 17px 325px 18px 330px;
-        
-        height: 118px;
-        width: 100%;
-    
-        gap: 22px;
-    
-    }
-
-}
-
 @media (min-width: 768px) {
+    .infor__location__bunner__center p, .container__description__product p {
+        font-size: 18px;
+    }
+
+    .bunner__header__p__mobile {
+        display: none;
+    }
+
+    .bunner__header__p__descktop {
+        display: flex;
+        
+    }
+
+    .container__infor__bunner__header {
+        align-items: center;
+        justify-content: center;
+
+        height: auto;
+        width: auto;
+    }
+    .container__infor__bunner__header h1{
+        flex-direction: row;
+        font-size: 70px;
+
+        margin-bottom: 12px;
+    }
+    .container__infor__bunner__header p {
+        font-size: 25px;
+
+        letter-spacing: 30%;
+        line-height: 100%;
+    }
+
+    .container__infor__bunner__header p:last-child {
+        font-size: 60px;
+     }
+}
+
+
+@media (min-width: 1024px) {
     
 }
