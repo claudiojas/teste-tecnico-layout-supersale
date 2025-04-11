@@ -1,12 +1,12 @@
 .section__submenu__select {
     position: absolute;
     top: 40px;
-    right: 20px;
+    left: 564px;
 
     display: flex;
     justify-content: space-between;
 
-    width: 1027px;
+    width: 1261px;
     max-width: 1261px;
     max-height: 329px;
 
@@ -25,7 +25,6 @@
 .section__submenu__select ul {
     display: flex;
     flex-direction: column;
-
 
     gap: 14px;
 }

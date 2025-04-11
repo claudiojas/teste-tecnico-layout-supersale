@@ -27,8 +27,7 @@ main {
     width: 100%;
     height: auto;
 }
-li {    width: 358px;
-
+li {    
     list-style: none;
     cursor: pointer;
 }

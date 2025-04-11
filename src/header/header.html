@@ -1,108 +1,111 @@
 <header class="header__contaiener">
   <!-- mobile version -->
-   <section class="header__contaiener__mobile">
+  <section class="header__contaiener__mobile">
 
-      <div class="sub__header__mobile">
-        <img src="/src/assets/icons/menu__icon.svg" alt="icone de menu">
-        <img src="/src/assets/logo.svg" alt="Logo da empresa">
-        <div class="container__shopping__car">
-            <img src="/src/assets/icons/shopping__car__icon.svg" alt="icone de carrinho de compras" class="shopping__car__icon">
-            <div class="cart__badge"> 0 </div>
-        </div>
+    <div class="sub__header__mobile">
+      <img src="/src/assets/icons/menu__icon.svg" alt="icone de menu">
+      <img src="/src/assets/logo.svg" alt="Logo da empresa">
+      <div class="container__shopping__car">
+          <img src="/src/assets/icons/shopping__car__icon.svg" alt="icone de carrinho de compras" class="shopping__car__icon">
+          <div class="cart__badge"> 0 </div>
       </div>
+    </div>
 
-      <div class="container__search__header_mobile">
-          <input type="text"  class="inpu__config__default__header" placeholder="Digite aqui o que você procura">
-          <img src="/src/assets/icons/search__icon.svg" alt="icone de lupa" class="search__icon__mobile">
-      </div>
+    <div class="container__search__header_mobile">
+        <input type="text"  class="inpu__config__default__header" placeholder="Digite aqui o que você procura">
+        <img src="/src/assets/icons/search__icon.svg" alt="icone de lupa" class="search__icon__mobile">
+    </div>
       
-   </section>
+  </section>
 
   <!-- descktop version -->
-    <section class="section__seach">
+  <section class="section__seach">
+      <div class="sub__section__search">
         <img src="/src/assets/logo.svg" alt="Logo da empresa">
         <div class="container__search__header">
             <input type="text" class="input__search__header inpu__config__default__header" placeholder="Digite aqui o que você procura">
             <img src="/src/assets/icons/search__icon.svg" alt="icone de lupa" class="search__icon">
         </div>
+      </div>
 
-        <div class="container__client__header">
-            <div class="container__welcome__client">
-                <img src="/src/assets/icons/welcome__client__icon.svg" alt="Icone do cliente">
-                <p>
-                    Olá,<br>
-                    Nome cliente!
-                </p>
-            </div>
-            <div class="container__shopping__car">
-                <img src="/src/assets/icons/shopping__car__icon.svg" alt="icone de carrinho de compras" class="shopping__car__icon">
-                <div class="cart__badge"> 0 </div>
-            </div>
+      <div class="container__client__header">
+          <div class="container__welcome__client">
+              <img src="/src/assets/icons/welcome__client__icon.svg" alt="Icone do cliente">
+              <p>
+                  Olá,<br>
+                  Nome cliente!
+              </p>
+          </div>
+          <div class="container__shopping__car">
+              <img src="/src/assets/icons/shopping__car__icon.svg" alt="icone de carrinho de compras" class="shopping__car__icon">
+              <div class="cart__badge"> 0 </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="section__nav">
+
+    <nav>
+      <ul id="all__categories" class="list__nav">
+        <li  class="categorie__item ">
+            <button class="span__header btn__toggle__menu">
+                <!-- <span class="icon"></span> -->
+                <p class="icon__menu">&#8801;</p>  
+                      <p>Todas as Categorias</p>
+            </button>
+        </li>
+        <li id="cell">
+            <button class="btn__all__products__menu" data-categoria="cell">Celulares</button>
+          </li>
+          <li id="eletro">
+            <button class="btn__all__products__menu" data-categoria="eletro">Eletrodomésticos</button>
+          </li>
+          <li id="infor">
+            <button class="btn__all__products__menu" data-categoria="infor">Informática</button>
+          </li>
+          <li id="audio/video">
+            <button class="btn__all__products__menu" data-categoria="audio/video">Áudio e vídeo</button>
+          </li>
+          <li id="furniture">
+            <button class="btn__all__products__menu" data-categoria="furniture">Móveis</button>
+          </li>
+          <li id="supermarket">
+            <button class="btn__all__products__menu" data-categoria="supermarket">Super mercado</button>
+          </li>
+          <li id="promo_code">
+            <button class="btn__all__products__menu" data-categoria="promo_code">Oferta do dia</button>
+          </li>
+          <li id="our_stores!">
+            <button class="btn__all__products__menu" data-categoria="our_stores!">Nossas lojas</button>
+          </li>
+      </ul> 
+    </nav>
+    
+
+    <!-- Componente de menu -->
+    <section class="section__navbar__menu">
+        <div class="submenu__navbar">
+            <ul class="list__nav__submenu">
+                <li id="cell" data-categoria="cell">Celulares <span class="icon__arrow__navbar"></span></li>
+                <li id="eletro" data-categoria="eletro">Eletrodomésticos <span class="icon__arrow__navbar"></span></li>
+                <li id="infor" data-categoria="infor">Informática <span class="icon__arrow__navbar"></span></li>
+                <li id="audio/video" data-categoria="audio/video">Áudio e vídeo <span class="icon__arrow__navbar"></span></li>
+                <li id="furniture" data-categoria="furniture">Móveis <span class="icon__arrow__navbar"></span></li>
+                <li id="deal_of_the_day" data-categoria="deal_of_the_day">Oferta do dia <span class="icon__arrow__navbar"></span></li>
+                <li id="our_stores!" data-categoria="our_stores!">Nossas lojas <span class="icon__arrow__navbar"></span></li>
+                <li id="promo_code" data-categoria="promo_code">Aba, cupom <span class="icon__arrow__navbar"></span></li>
+                <li id="premium_products" data-categoria="premium_products">Produtos exclúsivos <span class="icon__arrow__navbar"></span></li>
+                <li id="best_sellers" data-categoria="best_sellers">Mais vendidos <span class="icon__arrow__navbar"></span></li>
+                <li id="app_download" data-categoria="app_download">Baixe o app <span class="icon__arrow__navbar"></span></li>
+                <li id="aboutme" data-categoria="aboutme">Sobre nós <span class="icon__arrow__navbar"></span></li>
+                <li id="support" data-categoria="support">Central de atendimento <span class="icon__arrow__navbar"></span></li>
+              </ul>
+              
         </div>
     </section>
 
-    <section class="section__nav">
-        <nav>
-            <ul id="all__categories" class="list__nav">
-                <li  class="categorie__item ">
-                    <button class="span__header btn__toggle__menu">
-                        <!-- <span class="icon"></span> -->
-                        <p class="icon__menu">&#8801;</p>  
-                        <p>Todas as Categorias</p>
-                    </button>
-                </li>
-                <li id="cell">
-                    <button class="btn__all__products__menu" data-categoria="cell">Celulares</button>
-                  </li>
-                  <li id="eletro">
-                    <button class="btn__all__products__menu" data-categoria="eletro">Eletrodomésticos</button>
-                  </li>
-                  <li id="infor">
-                    <button class="btn__all__products__menu" data-categoria="infor">Informática</button>
-                  </li>
-                  <li id="audio/video">
-                    <button class="btn__all__products__menu" data-categoria="audio/video">Áudio e vídeo</button>
-                  </li>
-                  <li id="furniture">
-                    <button class="btn__all__products__menu" data-categoria="furniture">Móveis</button>
-                  </li>
-                  <li id="supermarket">
-                    <button class="btn__all__products__menu" data-categoria="supermarket">Super mercado</button>
-                  </li>
-                  <li id="promo_code">
-                    <button class="btn__all__products__menu" data-categoria="promo_code">Oferta do dia</button>
-                  </li>
-                  <li id="our_stores!">
-                    <button class="btn__all__products__menu" data-categoria="our_stores!">Nossas lojas</button>
-                  </li>
-                  
-            </ul>
-        </nav>
-
-        <!-- Componente de menu -->
-        <section class="section__navbar__menu">
-            <div class="submenu__navbar">
-                <ul class="list__nav__submenu">
-                    <li id="cell" data-categoria="cell">Celulares <span class="icon__arrow__navbar"></span></li>
-                    <li id="eletro" data-categoria="eletro">Eletrodomésticos <span class="icon__arrow__navbar"></span></li>
-                    <li id="infor" data-categoria="infor">Informática <span class="icon__arrow__navbar"></span></li>
-                    <li id="audio/video" data-categoria="audio/video">Áudio e vídeo <span class="icon__arrow__navbar"></span></li>
-                    <li id="furniture" data-categoria="furniture">Móveis <span class="icon__arrow__navbar"></span></li>
-                    <li id="deal_of_the_day" data-categoria="deal_of_the_day">Oferta do dia <span class="icon__arrow__navbar"></span></li>
-                    <li id="our_stores!" data-categoria="our_stores!">Nossas lojas <span class="icon__arrow__navbar"></span></li>
-                    <li id="promo_code" data-categoria="promo_code">Aba, cupom <span class="icon__arrow__navbar"></span></li>
-                    <li id="premium_products" data-categoria="premium_products">Produtos exclúsivos <span class="icon__arrow__navbar"></span></li>
-                    <li id="best_sellers" data-categoria="best_sellers">Mais vendidos <span class="icon__arrow__navbar"></span></li>
-                    <li id="app_download" data-categoria="app_download">Baixe o app <span class="icon__arrow__navbar"></span></li>
-                    <li id="aboutme" data-categoria="aboutme">Sobre nós <span class="icon__arrow__navbar"></span></li>
-                    <li id="support" data-categoria="support">Central de atendimento <span class="icon__arrow__navbar"></span></li>
-                  </ul>
-                  
-            </div>
-        </section>
-
-        <div id="touggle_relative_menu_departament"></div>
-    </section>
+    <div id="touggle_relative_menu_departament"></div>
+  </section>
 </header>
 
   

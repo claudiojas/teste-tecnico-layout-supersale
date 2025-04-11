@@ -60,12 +60,13 @@
 }
 
 
+.section__nav {
+    display: none;
+}
 
-/* Descktop styles */
+
 .section__seach {
     display: none;
-    align-items: center;
-    justify-content: space-between;
 }
 .container__search__header{
     position: relative;
@@ -127,58 +128,8 @@
     border-radius: 50%;
 }
 
-/* ----------- */
-.section__nav {
-    position: relative;
-    display: none;
-}
-.list__nav {
-    position: relative;
-
-    display: flex;
-    align-items: center;
-
-    gap: 45px;
-
-    font-weight: 400;
-    font-size: 14px;
-    font-family: Nunito Sans;
-}
-.list__nav li:hover {
-    color: #005cff;
-}
-.list__nav button {
-    all: unset;
-
-    display: flex;
-    align-items: center;
-
-    gap: 8px;
-}
-.icon__menu {
-   font-size: 25px;
-}
-.categorie__nav{
-    font-weight: 700;
-}
-
 /* css da navbar do menu */
 
-.section__navbar__menu {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease;
-
-    position: absolute;
-    display: none;
-    top: 38px;
-
-    width: 234px;
-    height: 329px;
-
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
 .section__navbar__menu.active {
     display: flex;
     opacity: 1;
@@ -262,9 +213,7 @@
     gap: 127px;
 }
 .touggle_relative_menu_departament {
-    position: absolute;
     z-index: 1000;
-
     width: 1261px;
 }
 
