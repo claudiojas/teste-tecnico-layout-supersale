@@ -21,10 +21,16 @@
 }
 .heder__section__01{
     display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
     gap: 142px;
 }
 .container__logos__01 {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 
     gap: 40px;
@@ -39,14 +45,33 @@
 }
 .footer__nav {
     display: flex;
-    gap: 110px;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
 }
 .footer__container__nav{
     display: flex;
     flex-direction: column;
-    height: auto;
 
-    gap: 11px;   
+    height: auto;
+    width: 100%;
+
+    padding: 16px;
+
+    border: 1px solid #ddd;
+
+    gap: 12px;
+}
+.footer__accordion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+.footer__accordion img:active {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
 }
 .font__emphasis{
     font-weight: 700;
@@ -58,8 +83,15 @@
 }
 .section__header__icons__payments{
     display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    width: 100%;
 
     gap: 34px;
+
+    padding: 0 40px;
 }
 .foother__ul__nav{
     display: flex;
@@ -96,10 +128,9 @@
     justify-content: center;
 
     gap: 40px;
-    padding: 40px 423px;
+    padding: 40px 16px;
 }
 .footer__container__business__partners p {
-    width: 1074px;
     text-align: center;
 
     font-size: 12px;

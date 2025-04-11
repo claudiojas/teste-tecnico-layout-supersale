@@ -132,6 +132,8 @@ li {    width: 358px;
      padding: 56px 16px;
  
      /* margin: 96px 0; */
+
+     overflow-x: hidden;
 }
 .container__cards{
     /* display: flex; */
