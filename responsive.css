@@ -39,5 +39,9 @@
 
 
 @media (min-width: 1024px) {
-    
+    .sale__ad {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
 }
