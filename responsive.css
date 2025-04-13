@@ -157,6 +157,30 @@
         margin: 96px 0;
     }
 
+    .container__featured__products {
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        margin-bottom: 65px;
+
+        padding: 0 20px;
+    }
+
+    .container__features__products__img{
+        width: 652px;
+        height: 747px;
+    }
+
+    .container__description__product {
+        width: 525px;
+    }
+
+    .container__description__product h1 {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
 }
 
 /* @media (min-width: 1540px) {
