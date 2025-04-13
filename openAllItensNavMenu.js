@@ -24,7 +24,7 @@ export default function openAllItensNavMenu () {
                     touggleMenuDepartament.innerHTML = data;
 
                     const containerMenuDepartament = document.getElementById("container__menu__departament");
-                    containerMenuDepartament.style.left = "329px";
+                    containerMenuDepartament.style.left = "0px";
 
                     hydratingSubmenu(categoriaInicial); 
                 });
