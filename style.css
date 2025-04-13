@@ -134,27 +134,18 @@ li {
      align-content: center;
  
      width: 100%;
-     /* width: 100%; */
-     /* padding: 0 315px; */
      padding: 56px 16px;
  
-     /* margin: 96px 0; */
-
      overflow-x: hidden;
 }
-.container__cards{
-    /* display: flex; */
+.container__cards__end{
     display: none;
     flex-direction: column;
     justify-content: center;
     align-content: center;
 
     width: 100%;
-    /* width: 100%; */
-    /* padding: 0 315px; */
     padding: 56px 16px;
-
-    /* margin: 96px 0; */
 }
 .sub__container__cards{
     position: relative;
@@ -234,7 +225,3 @@ li {
 #cards-components::-webkit-scrollbar {
     display: none;
 }
-
-
-
-/* estilo mobile */

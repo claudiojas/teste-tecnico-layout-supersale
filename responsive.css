@@ -38,7 +38,7 @@
 }
 
 
-@media (min-width: 1021px) {
+@media (min-width: 1170px) {
     .sale__ad {
         flex-direction: row;
         align-items: center;
@@ -54,7 +54,15 @@
         align-items: center;
         justify-content: center;
 
-        height: 118px;
+        width: 100%;
+        height: auto;
+
+        padding: 17px 100px;
+    }
+    .desktop__container {
+
+        display: flex;
+        flex-direction: column;
 
         gap: 23px;
     }
@@ -62,36 +70,39 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-        width: 100%;
-
-        padding: 0 325px 0 330px;
+        /* gap: 275px; */
     }
 
     .sub__section__search {
-        display: flex;
-        gap: 65px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 65px;
     }
+
+    .sub__section__search img {
+        width: 152px;
+        height: 27px;
+    }
+
     .section__nav{
         position: relative;
-
         display: flex;
 
-        width: 100%;
-        height: auto;
-
-        padding: 0 325px 0 330px;
     }
+  
     .list__nav {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content:space-between;
 
-        width: 1259px;
+        width: 100%;
 
         font-weight: 400;
         font-size: 14px;
         font-family: Nunito Sans;
+
+        gap: 45px;
     }
 
     .list__nav li:hover {
@@ -102,6 +113,8 @@
     
         display: flex;
         align-items: center;
+
+        white-space: nowrap;
     
         gap: 8px;
     }
@@ -128,11 +141,27 @@
         z-index: 1000;
     }
 
+    .container__cards__init {
+        width: 100%;
+        padding: 0 315px;
+
+        margin: 96px 0;
+    }
+
+    .container__cards__end {
+        display: flex;
+
+        width: 100%;
+        padding: 0 315px;
+
+        margin: 96px 0;
+    }
+
 }
 
-@media (min-width: 1540px) {
+/* @media (min-width: 1540px) {
    
     .bunner__header__imagem{
         padding-right: 399px;
     }
-}
+} */

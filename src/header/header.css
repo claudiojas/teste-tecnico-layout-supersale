@@ -1,3 +1,6 @@
+.header__contaiener{
+    padding: 0 16px;
+}
 .header__contaiener__mobile{
     display: flex;
     flex-direction: column;
