@@ -181,6 +181,22 @@
         font-size: 30px;
     }
 
+    .container__infor__product__hero__bunner {
+        flex-direction: row-reverse;
+
+        width: 1177px;
+        height: 728px;
+    }
+
+    .image__products__hero__bunner {
+        display: none;
+    }
+    .image__products__hero__bunner__descktop {
+        display: flex;
+
+        width: 652px;
+        height: 728px;
+    }
 }
 
 /* @media (min-width: 1540px) {
