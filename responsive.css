@@ -197,6 +197,20 @@
         width: 652px;
         height: 728px;
     }
+
+    .container__section__herocontact {
+        display: flex;
+    }
+
+    .image__herocontact__mobile {
+        display: none;
+    }
+    
+    .container__span__text {
+        height: 132px;
+        font-size: 30px;
+        font-weight: 400;
+    }
 }
 
 @media (min-width: 1540px) {
