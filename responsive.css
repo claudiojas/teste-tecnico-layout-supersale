@@ -211,6 +211,22 @@
         font-size: 30px;
         font-weight: 400;
     }
+
+    .container__newsletter{
+        width: 1260px;
+        height: 176px;
+    }
+    .container__form {
+        flex-direction: row;
+        height: 176px;
+    }
+    .input__name,
+    .input__email {
+        width: 280px;
+    }
+    .button__newsletter {
+        width: 121px;
+    }
 }
 
 @media (min-width: 1540px) {
