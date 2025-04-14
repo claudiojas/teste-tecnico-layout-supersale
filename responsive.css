@@ -227,6 +227,21 @@
     .button__newsletter {
         width: 121px;
     }
+
+    /* header */
+    .heder__section__01 {
+        flex-direction: row;
+        width: 1160px;
+    }
+    .footer__nav{
+        flex-direction: row;
+    }
+    .footer__container__nav{
+        border: none;
+    }
+    .footer__accordion img{
+        display: none;
+    }
 }
 
 @media (min-width: 1540px) {
