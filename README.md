@@ -34,9 +34,17 @@ A principal funcionalidade do projeto é carregar os seguintes componentes dinam
 1. Clone o repositório:
    ```bash
    git clone git@github.com:claudiojas/teste-tecnico-layout-supersale.git
+   ```
+2. Acesse o diretório do projeto:
+   ```bash
    cd teste-tecnico-layout-supersale
    ```
+3. Como o projeto é feito com HTML, CSS e JavaScript puro, não é necessário instalar dependências ou rodar comandos adicionais. Basta abrir o arquivo index.html no navegador.
 
+## 📂 Executar no Navegador
+   Você pode simplesmente dar dois cliques no arquivo index.html dentro da pasta do projeto, e ele será aberto no navegador padrão.
+
+   
 ## Contribuições
 
 Faça um fork deste repositório.
