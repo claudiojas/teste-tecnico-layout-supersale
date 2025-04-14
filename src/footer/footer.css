@@ -69,14 +69,25 @@
 
     width: 100%;
 }
-.footer__accordion img:active {
-    transform: rotate(180deg);
+.footer__accordion img {
     transition: transform 0.3s ease;
+}
+  
+.footer__accordion img.rotated {
+    transform: rotate(180deg);
 }
 .font__emphasis{
     font-weight: 700;
     font-size: 14px;
     line-height: 100%;
+}
+.nenu__accordion{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+.nenu__accordion.active{
+    max-height: 500px;
 }
 .span__footer__nav{
     font-weight: 500;

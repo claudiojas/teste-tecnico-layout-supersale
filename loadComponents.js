@@ -1,9 +1,10 @@
-import loadInitialCards from "./loadInitialCard.js"
-import loadCards from "./loadCards.js"
+import loadInitialCards from "./loadInitialCard.js";
+import loadCards from "./loadCards.js";
 import setupCategoryMenuHover from "./setupCategoryMenuToggle.js";
-import listDepartamentMenuHover from "./listDepartamentMenuHover.js"
-import openAllItensNavMenu from "./openAllItensNavMenu.js"
-import hydratingSubmenu from "./hydratingSubmenu.js"
+import listDepartamentMenuHover from "./listDepartamentMenuHover.js";
+import openAllItensNavMenu from "./openAllItensNavMenu.js";
+import hydratingSubmenu from "./hydratingSubmenu.js";
+import acordionFunction from "./acordionFunction.js";
 
 
 function loadComponents() {
@@ -64,6 +65,7 @@ function loadComponents() {
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer-container').innerHTML = data;
+            acordionFunction();
         })
         .catch(error => console.error('Erro ao carregar o footer:', error));
 
