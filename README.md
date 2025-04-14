@@ -33,8 +33,8 @@ A principal funcionalidade do projeto é carregar os seguintes componentes dinam
 
 1. Clone o repositório:
    ```bash
-   git clone <URL-do-repositório>
-   cd <nome-do-diretório>
+   git clone git@github.com:claudiojas/teste-tecnico-layout-supersale.git
+   cd teste-tecnico-layout-supersale
    ```
 
 ## Contribuições
