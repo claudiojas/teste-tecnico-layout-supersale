@@ -242,6 +242,9 @@
     .footer__accordion img{
         display: none;
     }
+    .footer__container__business__partners p {
+        width: 1074px;
+    }
 }
 
 @media (min-width: 1540px) {
