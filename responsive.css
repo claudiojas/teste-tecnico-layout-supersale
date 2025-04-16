@@ -45,6 +45,7 @@
         justify-content: center;
     }
 
+    /* header */
     .header__contaiener__mobile{
         display: none;
     }
@@ -70,7 +71,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        /* gap: 275px; */
     }
 
     .sub__section__search {
@@ -80,8 +80,8 @@
      gap: 65px;
     }
 
-    .sub__section__search img {
-        width: 152px;
+    .sub__section__search__logo {
+        width: 152px; 
         height: 27px;
     }
 

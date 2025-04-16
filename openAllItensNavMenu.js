@@ -18,6 +18,7 @@ export default function openAllItensNavMenu () {
 
             if(touggleMenuDepartament.innerHTML === '') {
                 closeMenuAllCategorie();
+                
                 fetch('src/header/touggle_relative_menu_departament.html')
                 .then(response => response.text())
                 .then(data => {

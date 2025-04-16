@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="src/header/header.css">
+    <link rel="stylesheet" href="src/modalSearch/modalSearch.css">
     <link rel="stylesheet" href="src/header/touggle_relative_menu_departament.css">
     <link rel="stylesheet" href="src/featuredProduct/featuredProduct.css">
     <link rel="stylesheet" href="src/heroBunnerCenter/heroBunnerCenter.css">
@@ -17,76 +18,76 @@
 
     <title>SuperSALE</title>
 </head>
-<body>
-    <!-- versão mobile -->
-    <section class="sale__ad">
-        <p>Ganhe <span class="span__value">R&dollar;10,00</span>de desconto no seu primeiro pedido.</p>
-        <p>Utilize o cupom <span class="span__ad">DESCONTO10</span></p>
-    </section>
+    <body>
+        <!-- versão mobile -->
+        <section class="sale__ad">
+            <p>Ganhe <span class="span__value">R&dollar;10,00</span>de desconto no seu primeiro pedido.</p>
+            <p>Utilize o cupom <span class="span__ad">DESCONTO10</span></p>
+        </section>
 
-    <!--carrega o componente de header -->
-    <div id="header-container"></div>
+        <!--carrega o componente de header -->
+        <div id="header-container"></div>
 
-    <!-- Carrega o bunner da header -->
-    <div class="bunner__header__imagem">
-        <div class="container__infor__bunner__header">
-            <h1>
-                <span>SUPER</span>
-                <span>SALE</span>
-            </h1>
-            <p class="bunner__header__p__mobile">SELECTED ITENS UP TO</p>
-            <p class="bunner__header__p__descktop">ITENS SELECIONADOS COM ATÉ</p>
-            <p>50%OFF</p>
-        </div>
-    </div>
-
-    <!--carrega o componente dos cards do topo da página-->
-    <div class="container__cards__init">
-        <div class="sub__container__cards">
-            <div class="container__infor__cards">
-                <p>Lançamentos</p>
-                <p>ver mais</p>
+        <!-- Carrega o bunner da header -->
+        <div class="bunner__header__imagem">
+            <div class="container__infor__bunner__header">
+                <h1>
+                    <span>SUPER</span>
+                    <span>SALE</span>
+                </h1>
+                <p class="bunner__header__p__mobile">SELECTED ITENS UP TO</p>
+                <p class="bunner__header__p__descktop">ITENS SELECIONADOS COM ATÉ</p>
+                <p>50%OFF</p>
             </div>
-            <div id="cards-components-init"></div>
-            <img src="src/assets/icons/arrow-left.svg" alt="seta para esquerda" class="arrow-left-init">
-            <img src="src/assets/icons/arrow-rigth.svg" alt="seta para direita" class="arrow-rigth-init">
         </div>
-    </div>
 
-    <main>
-        <!-- Carrega o produto em destaque  -->
-        <div id="featured-product"></div>
-
-        <!-- Carrega o bunner de produto do meio da página  -->
-        <div id="hero-bunner-center"></div>
-
-         <!-- Carrega o produto em destaque  -->
-         <div id="featured-product-2"></div>
-    </main>
-
-    <!--carrega o componente dos cards no final da página-->
-    <div class="container__cards__end">
-        <div class="sub__container__cards">
-            <div class="container__infor__cards">
-                <p>Lançamentos</p>
-                <p>ver mais</p>
+        <!--carrega o componente dos cards do topo da página-->
+        <div class="container__cards__init">
+            <div class="sub__container__cards">
+                <div class="container__infor__cards">
+                    <p>Lançamentos</p>
+                    <p>ver mais</p>
+                </div>
+                <div id="cards-components-init"></div>
+                <img src="src/assets/icons/arrow-left.svg" alt="seta para esquerda" class="arrow-left-init">
+                <img src="src/assets/icons/arrow-rigth.svg" alt="seta para direita" class="arrow-rigth-init">
             </div>
-            <div id="cards-components"></div>
-            <img src="src/assets/icons/arrow-left.svg" alt="seta para esquerda" class="arrow-left">
-            <img src="src/assets/icons/arrow-rigth.svg" alt="seta para direita" class="arrow-rigth">
         </div>
-    </div>
-       
 
-    <!--carrega o componente de newsletter-->
-    <div id="hero-contact"></div>
+        <main>
+            <!-- Carrega o produto em destaque  -->
+            <div id="featured-product"></div>
 
-     <!--carrega o componente de newsletter-->
-    <div id="newsletter-container"></div>
+            <!-- Carrega o bunner de produto do meio da página  -->
+            <div id="hero-bunner-center"></div>
 
-     <!--carrega o componente de footer -->
-    <div id="footer-container"></div>  
+            <!-- Carrega o produto em destaque  -->
+            <div id="featured-product-2"></div>
+        </main>
 
-    <script type="module" src="./loadComponents.js"></script>
-</body>
+        <!--carrega o componente dos cards no final da página-->
+        <div class="container__cards__end">
+            <div class="sub__container__cards">
+                <div class="container__infor__cards">
+                    <p>Lançamentos</p>
+                    <p>ver mais</p>
+                </div>
+                <div id="cards-components"></div>
+                <img src="src/assets/icons/arrow-left.svg" alt="seta para esquerda" class="arrow-left">
+                <img src="src/assets/icons/arrow-rigth.svg" alt="seta para direita" class="arrow-rigth">
+            </div>
+        </div>
+        
+
+        <!--carrega o componente de newsletter-->
+        <div id="hero-contact"></div>
+
+        <!--carrega o componente de newsletter-->
+        <div id="newsletter-container"></div>
+
+        <!--carrega o componente de footer -->
+        <div id="footer-container"></div>  
+
+        <script type="module" src="./loadComponents.js"></script>
+    </body>
 </html>
