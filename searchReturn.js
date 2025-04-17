@@ -4,7 +4,6 @@ export default function searchReturn () {
     const isMobile = window.innerWidth <= 1170;
 
     const searchInputs = document.querySelectorAll(".inpu__config__default__header");
-    const searchIcons = document.querySelectorAll(".search__icon");
 
     let inputValue;
 
