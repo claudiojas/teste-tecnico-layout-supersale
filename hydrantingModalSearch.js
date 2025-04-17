@@ -1,7 +1,10 @@
 export default async function hydrantingModalSearch(inputValue, showModal = true) {
-    const modalContainer = document.querySelector('.container__search__modal');
-    const modalList = modalContainer.querySelector('.container__search__results');
-    const overlay = document.querySelector('.overlay__modal__search');
+    const isMobile = window.innerWidth <= 1170;
+
+    const modalContainer = document.querySelector(isMobile ? '.container__search__modal--mobile' : '.container__search__modal');
+    const modalList = modalContainer.querySelector(isMobile ? '.container__search__results--mobile' : '.container__search__results');
+    const overlay = document.querySelector(isMobile ? '.overlay__modal__search--mobile' : '.overlay__modal__search');
+
 
     if (!modalContainer || !modalList || !overlay) return;
 

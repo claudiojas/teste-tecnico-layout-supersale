@@ -23,16 +23,6 @@ export default function searchReturn () {
             hydrantingModalSearch(inputValue, true);
         });
 
-        input.addEventListener("keydown", (e) => {
-            if (e.key === "Enter") alert(inputValue);
-        });
-    });
-
-    searchIcons.forEach(icon => {
-        icon.addEventListener("click", () => {
-            if (!inputValue?.trim()) return;
-            alert(inputValue);
-        });
     });
     
     
@@ -40,6 +30,4 @@ export default function searchReturn () {
         hydrantingModalSearch(null, false);
     });
     
-
-
 }
