@@ -1,5 +1,5 @@
 import hydrantingModalSearch from "./hydrantingModalSearch.js";
-import handleBoxMenuMMobile from './handleBoxMenuMobile.js';
+import handleBoxMenuMobile from './handleBoxMenuMobile.js';
 
 export default function searchReturn () {
     const isMobile = window.innerWidth <= 1170;
@@ -26,8 +26,8 @@ export default function searchReturn () {
         const input = document.querySelector(isMobile ? '.input__search__header--mobile' : '.input__search__header');
 
         hydrantingModalSearch(null, false);
-        handleBoxMenuMMobile('none');
-        
+        handleBoxMenuMobile('none');
+
         input.value = '';
         inputValue = '';
     });
