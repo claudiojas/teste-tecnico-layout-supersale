@@ -10,9 +10,9 @@ export default function searchReturn () {
 
     searchInputs.forEach(input => {
 
-        input.addEventListener('focus', () => {
-            hydrantingModalSearch(inputValue, true);
-        });
+        // input.addEventListener('focus', () => {
+        //     hydrantingModalSearch(inputValue, true);
+        // });
 
         input.addEventListener("input", (e) => {
             inputValue = e.target.value;
@@ -29,6 +29,7 @@ export default function searchReturn () {
         hydrantingModalSearch(null, false);
         handleBoxMenuMobile('none');
         overlay.style.backgroundColor = "transparent";
+        document.body.style.position = '';
 
         input.value = '';
         inputValue = '';

@@ -7,6 +7,7 @@ import hydratingSubmenu from "./hydratingSubmenu.js";
 import acordionFunction from "./acordionFunction.js";
 import searchReturn from "./searchReturn.js";
 import handleMenuMobile from "./handleMenuMobile.js";
+import fixedScrollHeader from './fixedHederScroll.js';
 
 
 function loadComponents() {
@@ -21,6 +22,7 @@ function loadComponents() {
             hydratingSubmenu();
             searchReturn();
             handleMenuMobile();
+            fixedScrollHeader();
         })
         .catch(error => console.error('Erro ao carregar o header:', error));
 

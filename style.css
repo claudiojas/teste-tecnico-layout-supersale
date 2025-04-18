@@ -225,3 +225,12 @@ li {
 #cards-components::-webkit-scrollbar {
     display: none;
 }
+
+.no-scroll {
+    overflow: hidden;
+}
+
+#header-container{
+    width: 100%;
+}
+
