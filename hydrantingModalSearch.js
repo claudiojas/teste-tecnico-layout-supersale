@@ -1,18 +1,18 @@
+import handleOverlayModal from './handleOverlayModal.js';
+
 export default async function hydrantingModalSearch(inputValue, showModal = true) {
     const isMobile = window.innerWidth <= 1170;
 
     const modalContainer = document.querySelector(isMobile ? '.container__search__modal--mobile' : '.container__search__modal');
     const modalList = modalContainer.querySelector(isMobile ? '.container__search__results--mobile' : '.container__search__results');
-    const overlay = document.querySelector(isMobile ? '.overlay__modal__search--mobile' : '.overlay__modal__search');
-
     
 
-    if (!modalContainer || !modalList || !overlay) return;
+    if (!modalContainer || !modalList) return;
 
 
     if (!inputValue?.trim() || !showModal) {
         modalContainer.style.display = 'none';
-        overlay.style.display = 'none';
+        handleOverlayModal(false);
         return;
     }
 
@@ -54,18 +54,18 @@ export default async function hydrantingModalSearch(inputValue, showModal = true
 
                     const input = document.querySelector(isMobile ? '.inpu__config__default__header' : '.input__search__header');
                     modalContainer.style.display = 'none';
-                    overlay.style.display = 'none';
+                    handleOverlayModal(false);
                     input.value = '';
                 });
             });
         }
 
         modalContainer.style.display = 'block';
-        overlay.style.display = 'block';
+        handleOverlayModal(true);
     } catch (err) {
         console.error('Erro ao buscar os dados:', err);
         modalList.innerHTML = '<li>Erro ao buscar os dados.</li>';
         modalContainer.style.display = 'block';
-        overlay.style.display = 'block';
+        handleOverlayModal(true);
     }
 }

@@ -6,6 +6,7 @@ import openAllItensNavMenu from "./openAllItensNavMenu.js";
 import hydratingSubmenu from "./hydratingSubmenu.js";
 import acordionFunction from "./acordionFunction.js";
 import searchReturn from "./searchReturn.js";
+import handleMenuMobile from "./handleMenuMobile.js";
 
 
 function loadComponents() {
@@ -19,6 +20,7 @@ function loadComponents() {
             openAllItensNavMenu();
             hydratingSubmenu();
             searchReturn();
+            handleMenuMobile();
         })
         .catch(error => console.error('Erro ao carregar o header:', error));
 
