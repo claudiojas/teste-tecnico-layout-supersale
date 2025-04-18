@@ -7,12 +7,45 @@ export default function handleMenuMobile () {
     const overlay = document.querySelector('.overlay__modal__search--mobile ');
    
 
-    iconMenuMobile.addEventListener("click", () => {
+    iconMenuMobile.addEventListener("click", async () => {
 
         const stateOverlay = handleOverlayModal(true);
         handleBoxMenuMMobile(stateOverlay);
 
         overlay.style.backgroundColor = "#000000d3";
+
+        // logica para adicionar lista de produtos
+
+        try {
+            const containerBoxResult = document.querySelector(".container__box__list");
+
+            const res = await fetch('./api.json');
+            const data = await res.json();
+            let results = [];
+
+            Object.values(data).forEach(categoria => {
+                categoria.forEach(subcategoria => {
+                // console.log(subcategoria)
+
+                results.push(subcategoria.title)
+
+                    
+                });
+            });
+
+            if(results.length === 0) {
+                containerBoxResult.innerHTML = '<li>Nenhum resultado encontrado.</li>';
+            } else {
+                containerBoxResult.innerHTML = results.map((categoria, _) => `
+                    <li data-item="${categoria}" class="categorie-result-item">
+                        <strong>${categoria}</strong>
+                    </li>
+                `).join('');
+            }
+            
+        } catch (error) {
+            console.error('Erro ao buscar os dados:', error);
+        }
     })
 
 
@@ -22,3 +55,13 @@ export default function handleMenuMobile () {
         overlay.style.backgroundColor = "transparent";
     })
 }
+
+
+// subcategoria.items.forEach(item => {
+                    //     if (item.toLowerCase().includes(searchTerm)) {
+                    //         results.push({
+                    //             title: subcategoria.title,
+                    //             item
+                    //         });
+                    //     }
+                    // });
