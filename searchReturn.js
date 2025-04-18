@@ -24,9 +24,11 @@ export default function searchReturn () {
     
     document.querySelector(isMobile ? '.overlay__modal__search--mobile' : '.overlay__modal__search').addEventListener('click', () => {
         const input = document.querySelector(isMobile ? '.input__search__header--mobile' : '.input__search__header');
+        const overlay = document.querySelector('.overlay__modal__search--mobile ');
 
         hydrantingModalSearch(null, false);
         handleBoxMenuMobile('none');
+        overlay.style.backgroundColor = "transparent";
 
         input.value = '';
         inputValue = '';

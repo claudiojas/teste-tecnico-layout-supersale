@@ -72,6 +72,10 @@
         justify-content: space-between;
     }
 
+    .overlay__modal__search{
+        top: 118px;
+    }
+
     .sub__section__search {
      display: flex;
      align-items: center;
