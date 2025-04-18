@@ -5,6 +5,7 @@ export default function handleMenuMobile () {
     const iconBtnClose = document.querySelector('.btn__close');
     const iconMenuMobile = document.querySelector('.menu__mobile__icon');
     const overlay = document.querySelector('.overlay__modal__search--mobile ');
+    const learnMore = document.querySelector('.learn-more');;
    
 
     iconMenuMobile.addEventListener("click", async () => {
@@ -33,15 +34,26 @@ export default function handleMenuMobile () {
                 });
             });
 
-            if(results.length === 0) {
-                containerBoxResult.innerHTML = '<li>Nenhum resultado encontrado.</li>';
-            } else {
-                containerBoxResult.innerHTML = results.map((categoria, _) => `
-                    <li data-item="${categoria}" class="categorie-result-item">
-                        <strong>${categoria}</strong>
-                    </li>
-                `).join('');
-            }
+            learnMore.addEventListener('click', () => {
+                if(results.length === 0) {
+                    containerBoxResult.innerHTML = '<li>Nenhum resultado encontrado.</li>';
+                } else {
+                    containerBoxResult.innerHTML = results.map((categoria, _) => `
+                        <li data-item="${categoria}" class="categorie-result-item li__departament">
+                            <strong>${categoria}</strong> >
+                        </li>
+                    `).join('');
+                };
+
+                const containerList = document.querySelector('.container__box__list');
+
+                if (containerList.style.height === '0px' || containerList.style.height === '') {
+                    containerList.style.height = 'auto';
+                } else {
+                    containerList.style.height = '0px';
+                }
+            })
+
             
         } catch (error) {
             console.error('Erro ao buscar os dados:', error);
