@@ -12,7 +12,7 @@ export default async function hydrantingModalSearch(inputValue, showModal = true
 
     if (!inputValue?.trim() || !showModal) {
         modalContainer.style.display = 'none';
-        handleOverlayModal(false);
+        inputValue = '';
         return;
     }
 
