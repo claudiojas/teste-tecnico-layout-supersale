@@ -1,11 +1,18 @@
 import handleOverlayModal from './handleOverlayModal.js';
 import handleBoxMenuMMobile from './handleBoxMenuMobile.js';
 
-export default function handleMenuMobile () {
+export default async function handleMenuMobile () {
     const iconBtnClose = document.querySelector('.btn__close');
     const iconMenuMobile = document.querySelector('.menu__mobile__icon');
     const overlay = document.querySelector('.overlay__modal__search--mobile ');
     const learnMore = document.querySelector('.learn-more');;
+    const containerResultsSubmenu = document.querySelector(".container__submenu__results");
+
+    const res = await fetch('./api.json');
+    const data = await res.json();
+    const infoSubmenuResult = document.querySelector(".info__submenu__results");
+
+
    
 
     iconMenuMobile.addEventListener("click", async () => {
@@ -20,11 +27,7 @@ export default function handleMenuMobile () {
         try {
             const containerBoxResult = document.querySelector(".container__box__list");
             const buttonReturn = document.querySelector(".header__submenu__results");
-            const containerResultsSubmenu = document.querySelector(".container__submenu__results");
 
-
-            const res = await fetch('./api.json');
-            const data = await res.json();
             let resultsCategorie = []; 
             let objectKeys = [];
 
@@ -98,9 +101,25 @@ export default function handleMenuMobile () {
                         containerResultsSubmenu.style.transform = 'translateY(0)';
 
                         const selectedItems = data[selectProduct];
-                    
-                        console.log(`Itens da categoria "${selectProduct}":`, selectedItems);
 
+                        infoSubmenuResult.innerHTML = '';
+                        selectedItems.forEach(item => {
+                            const h1 = document.createElement('h1');
+                            h1.textContent = item.title || 'Sem título';
+                            infoSubmenuResult.appendChild(h1);
+
+                            if (Array.isArray(item.items)) {
+                                const ul = document.createElement('ul');
+                      
+                                item.items.forEach(prod => {
+                                  const li = document.createElement('li');
+                                  li.textContent = prod;
+                                  ul.appendChild(li);
+                                });
+                      
+                                infoSubmenuResult.appendChild(ul);
+                            }
+                        });
                     })
                 });
 
@@ -121,7 +140,50 @@ export default function handleMenuMobile () {
         const stateOverlay = handleOverlayModal(false);
         handleBoxMenuMMobile(stateOverlay);
         overlay.style.backgroundColor = "transparent";
-    })
-}
+    });
 
 
+
+    const aboutSelect = document.querySelector(".about-select");
+    const supportSelect = document.querySelector(".support-select");
+
+    aboutSelect.addEventListener("click", () => {
+        renderSubmenuContent("aboutme", data, infoSubmenuResult);
+    });
+      
+    supportSelect.addEventListener("click", () => {
+        renderSubmenuContent("support", data, infoSubmenuResult);
+    });
+};
+
+
+// Função para exibir o conteúdo da categoria sobre nos e suporte
+function renderSubmenuContent(categoryKey, data, infoSubmenuResult) {
+    const containerResultsSubmenu = document.querySelector(".container__submenu__results");
+
+    const selectedItems = data[categoryKey];
+  
+    if (!selectedItems || !Array.isArray(selectedItems)) return;
+  
+    containerResultsSubmenu.style.transform = 'translateY(0)';
+
+    infoSubmenuResult.innerHTML = ''; 
+  
+    selectedItems.forEach(item => {
+      const h1 = document.createElement('h1');
+      h1.textContent = item.title || 'Sem título';
+      infoSubmenuResult.appendChild(h1);
+  
+      if (Array.isArray(item.items)) {
+        const ul = document.createElement('ul');
+  
+        item.items.forEach(prod => {
+          const li = document.createElement('li');
+          li.textContent = prod;
+          ul.appendChild(li);
+        });
+  
+        infoSubmenuResult.appendChild(ul);
+      }
+    });  
+  }

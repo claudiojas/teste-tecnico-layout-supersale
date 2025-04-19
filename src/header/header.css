@@ -3,7 +3,7 @@
 
     background-color: transparent;
 
-    transition: transform 0.9s ease-in-out, background-color 0.5s ease-in-out;
+    transition: transform 0.4s ease-in-out, background-color 0.5s ease-in-out;
 }
 .header-fixed {
     position: fixed;
@@ -161,6 +161,25 @@
     color: #091f44;
 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.info__submenu__results {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem;
+
+    gap: 1rem;
+
+    color: #091f44;
+}
+.info__submenu__results h1 {
+    background-color: #091f44;
+    color: white;
+    padding: 0 1rem;
+}
+.info__submenu__results li {
+    padding: 0 1rem;
+    margin: 0 0 1rem 0;
 }
 .container__search__header_mobile {
     position: relative;
