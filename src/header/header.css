@@ -244,6 +244,15 @@
     right: 12px;
     top: 25%;
 }
+.search__icon--mobile {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: 12px;
+    top: 25%;
+
+    z-index: 9999;
+}
 
 .container__client__header{
     display: flex;

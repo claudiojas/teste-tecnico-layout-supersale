@@ -6,7 +6,7 @@ export default function searchReturn () {
     const isMobile = window.innerWidth <= 1170;
 
     const searchInputs = document.querySelectorAll(isMobile ? '.inpu__config__default__header' : '.input__search__header');
-    const searchIcon = document.querySelector(".search__icon");
+    const searchIcon = document.querySelector(isMobile ? ".search__icon--mobile" : ".search__icon--desktop");
 
     let inputValue;
 
@@ -28,22 +28,9 @@ export default function searchReturn () {
                 input.blur();
             };
         });
+        
 
-        searchIcon.addEventListener("click", ()=> {
-            if(inputValue === undefined || inputValue === "") {
-                 alert("Por favor, digite o que você procura! 👍");
-                 input.focus();
-                 return
-            } else {
-                alert(`Aqui o sistema redirecionaria para produros relacionados a "${inputValue}"`);
-
-                input.value = '';
-                inputValue = '';
-                hydrantingModalSearch(null, false);
-                handleOverlayModal(false);
-
-            }
-        });
+        
 
         input.addEventListener('focus', () => {
             handleOverlayModal(true);
@@ -65,7 +52,7 @@ export default function searchReturn () {
 
     
     document.querySelector(isMobile ? '.overlay__modal__search--mobile' : '.overlay__modal__search').addEventListener('click', () => {
-        const input = document.querySelector(isMobile ? '.input__search__header--mobile' : '.input__search__header');
+        const input = document.querySelector(isMobile ? '.input__search__header--mobile' : '.input__search__header--desktop');
         const overlay = document.querySelector('.overlay__modal__search--mobile ');
 
         hydrantingModalSearch(null, false);
@@ -76,17 +63,28 @@ export default function searchReturn () {
         input.value = '';
         inputValue = '';
     });
+
+
+    searchIcon.addEventListener("click", () => {
+        const isMobile = window.innerWidth <= 1170;
+
+        const input = document.querySelector(isMobile ? ".input__search__header--mobile" : ".input__search__header");
+        if(inputValue === undefined || inputValue === "") {
+            alert("Por favor, digite o que você procura! 👍");
+             input.focus();
+             return
+        } else {
+            alert(`Aqui o sistema redirecionaria para produros relacionados a "${inputValue}"`);
+
+            input.value = '';
+            inputValue = '';
+            hydrantingModalSearch(null, false);
+            handleOverlayModal(false);
+
+            return
+        }
+    });
+
 };
 
 
-function detectedEnterOrEsc () {
-    document.addEventListener("keydown", (e) => {
-        if (e.key === "Enter") {
-            console.log("Enter pressionado!");
-            // Sua lógica para o Enter
-        } else if (e.key === "Escape") {
-            console.log("Escape pressionado!");
-            // Sua lógica para o Esc
-        }
-    });
-}
