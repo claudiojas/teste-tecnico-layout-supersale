@@ -30,8 +30,6 @@ export default function searchReturn () {
         });
         
 
-        
-
         input.addEventListener('focus', () => {
             handleOverlayModal(true);
             

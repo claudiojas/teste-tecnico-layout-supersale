@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="src/newsletter/newsletter.css">
     <link rel="stylesheet" href="src/footer/footer.css">
     <link rel="stylesheet" href="responsive.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
 
     <title>SuperSALE</title>
@@ -28,16 +32,67 @@
         <div id="header-container"></div>
 
         <!-- Carrega o bunner da header -->
-        <div class="bunner__header__imagem">
+        <div class="bunner__header__imagem--desktop">
             <div class="container__infor__bunner__header">
-                <h1>
-                    <span>SUPER</span>
-                    <span>SALE</span>
-                </h1>
-                <p class="bunner__header__p__mobile">SELECTED ITENS UP TO</p>
-                <p class="bunner__header__p__descktop">ITENS SELECIONADOS COM ATÉ</p>
-                <p>50%OFF</p>
+              <h1>
+                <span>SUPER</span>
+                <span>SALE</span>
+              </h1>
+              <p class="bunner__header__p__mobile">SELECTED ITENS UP TO</p>
+              <p class="bunner__header__p__descktop">ITENS SELECIONADOS COM ATÉ</p>
+              <p>50%OFF</p>
             </div>
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <div class="bunner__header__imagem">
+                  <div class="container__infor__bunner__header">
+                    <h1>
+                      <span>SUPER</span>
+                      <span>SALE</span>
+                    </h1>
+                    <p class="bunner__header__p__mobile">SELECTED ITENS UP TO</p>
+                    <p class="bunner__header__p__descktop">ITENS SELECIONADOS COM ATÉ</p>
+                    <p>50%OFF</p>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Slide 2 (exemplo) -->
+              <div class="swiper-slide">
+                    <div class="bunner__header__imagem">
+                        <div class="container__infor__bunner__header">
+                            <h1>
+                                <span>SUPER</span>
+                                <span>SALE</span>
+                            </h1>
+                            <p class="bunner__header__p__mobile">SELECTED ITENS UP TO</p>
+                            <p class="bunner__header__p__descktop">ITENS SELECIONADOS COM ATÉ</p>
+                            <p>50%OFF</p>
+                        </div>
+                    </div>
+              </div>
+
+                <!-- Slide 3 (exemplo) -->
+                <div class="swiper-slide">
+                    <div class="bunner__header__imagem">
+                        <div class="container__infor__bunner__header">
+                            <h1>
+                                <span>SUPER</span>
+                                <span>SALE</span>
+                            </h1>
+                            <p class="bunner__header__p__mobile">SELECTED ITENS UP TO</p>
+                            <p class="bunner__header__p__descktop">ITENS SELECIONADOS COM ATÉ</p>
+                            <p>50%OFF</p>
+                        </div>
+                    </div>
+                </div>
+          
+              <!-- Adicione quantos slides quiser -->
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
 
         <!--carrega o componente dos cards do topo da página-->
@@ -88,5 +143,24 @@
         <div id="footer-container"></div>  
 
         <script type="module" src="./loadComponents.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </body>
+
+
+    <!-- Controle do swiper -->
+    <script>
+        const swiper = new Swiper('.swiper', {
+          loop: true,
+          autoplay: {
+            delay: 3000,
+            reverseDirection: false, 
+          },
+          speed: 1000,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+        });
+    </script>
+      
 </html>

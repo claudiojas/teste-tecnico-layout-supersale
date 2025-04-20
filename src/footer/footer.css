@@ -70,7 +70,7 @@
     width: 100%;
 }
 .footer__accordion img {
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
 }
   
 .footer__accordion img.rotated {
@@ -84,7 +84,7 @@
 .nenu__accordion{
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.4s ease;
 }
 .nenu__accordion.active{
     max-height: 500px;
