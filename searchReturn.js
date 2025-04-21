@@ -37,7 +37,6 @@ export default function searchReturn () {
 
         input.addEventListener('blur', () => {
             handleOverlayModal(false);
-            
         });
 
         input.addEventListener("input", (e) => {
@@ -69,8 +68,8 @@ export default function searchReturn () {
         const input = document.querySelector(isMobile ? ".input__search__header--mobile" : ".input__search__header");
         if(inputValue === undefined || inputValue === "") {
             alert("Por favor, digite o que você procura! 👍");
-             input.focus();
-             return
+            input.focus();
+            return
         } else {
             alert(`Aqui o sistema redirecionaria para produros relacionados a "${inputValue}"`);
 

@@ -36,7 +36,17 @@ export default async function hydrantingModalSearch(inputValue, showModal = true
         });
 
         if (results.length === 0) {
-            modalList.innerHTML = '<li>Nenhum resultado encontrado.</li>';
+            modalList.innerHTML = '<li class="li_not_foud">Nenhum resultado encontrado.</li>';
+            const notFound = document.querySelector(".li_not_foud");
+
+            notFound.addEventListener("click", () => {
+                modalContainer.style.display = 'none';
+                inputValue = '';
+
+                const input = document.querySelector(isMobile ? '.inpu__config__default__header' : '.input__search__header');
+                modalContainer.style.display = 'none'
+                input.value = '';
+            })
         } else {
             modalList.innerHTML = results.map((r, _) => `
                 <li data-item="${r.item}" class="search-result-item">
@@ -48,11 +58,11 @@ export default async function hydrantingModalSearch(inputValue, showModal = true
             const items = modalList.querySelectorAll('.search-result-item');
 
             items.forEach(itemEl => {
+                const input = document.querySelector(isMobile ? '.inpu__config__default__header' : '.input__search__header');
                 itemEl.addEventListener('click', (e) => {
                     const selectedItem = itemEl.getAttribute('data-item');
                     alert(`Você seria direcionado(a) para a página de: ${selectedItem}`);
 
-                    const input = document.querySelector(isMobile ? '.inpu__config__default__header' : '.input__search__header');
                     modalContainer.style.display = 'none';
                     handleOverlayModal(false);
                     input.value = '';
